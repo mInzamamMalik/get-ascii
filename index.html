@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <script>
+        function GetAscii() {
+            var a = document.getElementById("input").value;
+            if(a == ""){
+                document.getElementById("p").innerHTML = "You leave box empty";
+
+            }else
+            document.getElementById("p").innerHTML = "ASCII code of '" + a + "'" + " is " + a.charCodeAt(0);
+
+        }
+    </script>
+
+    <style>
+        input, p{
+            font-size: 64px;
+            font-family: "Segoe UI Light", "Segoe UI Semilight", "Segoe UI", serif;
+        }
+        input#input{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+<form>
+    <input type="text" maxlength="1" id="input" placeholder="Get ASCII Code" >
+    <input type="button" id="submit" value="  Proceed  " onclick="GetAscii();" name="as">
+</form>
+<br />
+
+<p id="p"></p>
+
+</body>
+</html>
