@@ -3,6 +3,7 @@
  */
 function GetAscii() {
     var a = document.getElementById("input").value;
+	document.getElementById("input").value = '';
     if(a == ""){
         document.getElementById("p").innerHTML = "You leave box empty";
 
